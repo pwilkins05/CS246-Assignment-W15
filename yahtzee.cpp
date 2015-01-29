@@ -15,18 +15,10 @@
 // TODO: switch to using arrays for scores
 // TODO: add yahtzee bonus score
 // TODO: implement scoring functions (see switch statement, line 125)
-<<<<<<< HEAD
-// BUG: dice not holding correct values
 
+// BUG: dice not holding correct values (should be fixed now)
 //DONE: make askReroll accept lowercase letters - Justin Thomas
 //Done: switch to using array for dice
-=======
-// TODO: make ask reroll accept lowercase letters
-// BUG: dice not holding correct values (should be fixed now)
-
-//Done: switch to using array for dice 
->>>>>>> f9912c96faa9a3ec3a58f15d564446c830c68d76
-
 
 using namespace std;
 
