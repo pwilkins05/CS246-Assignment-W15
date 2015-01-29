@@ -1,5 +1,10 @@
 //WelloHorld, Jacob Bertsch
 
+//BUG: Output not working correctly
+//BUG: Output string incorrect
+//BUG: Errors building program
+
+
 #include <string>
 
 using namespace std;
