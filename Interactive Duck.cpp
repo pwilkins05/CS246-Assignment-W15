@@ -27,7 +27,7 @@ int main()
         cin >> throawaystringnoonewilleverread;
         int fourtyfive = 45;
         int zero = 0;
-        cout << fourtyfive/zero;
+        cout << fourtyfive/zero; //Why does it keep freezing here?
     }
     else if (choise == 2)
     {
@@ -60,7 +60,7 @@ int main()
         cout << "That's what it's all about Judas." << endl;
         string line4 = "";
         getline(cin, line4);
-
+//This part seems buggy? I want to let them customize every other line in the song. :? :? :?
         SetColor(7);
         cout << "REPLAY TIME:" << endl;
         SetColor(15);
