@@ -13,7 +13,7 @@ private:
 public:
 	Potato(string potato)
 	{
-		this.potato = potato;//Needs to use an arrow, not a dot.
+		this.potato = potato;//Needs to use an arrow, not a dot. this references the current instance of Potato, which is a pointer to the current instance.
 	}
 	string getPotato(void)
 	{
