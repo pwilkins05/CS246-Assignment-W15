@@ -28,8 +28,9 @@ int main(void)
 	{
 		for (int j = i; j < POTATO; j++)
 		{
-			cout << potato.getPotato() << endl;
-		}	
+			cout << potato.getPotato();
+		}
+		cout << endl;
 	}
 	system("pause");
 }
