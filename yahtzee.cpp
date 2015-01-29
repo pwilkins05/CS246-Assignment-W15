@@ -9,19 +9,12 @@
  *
  * Starter code by Paul Wilkins
  * Last Modified: 02/04/2014
- *
+ * Modified again by CS246 W15 class
  *******************************/
 // TODO: Learn c++ and finish assignment
 // TODO: switch to using arrays for scores
 // TODO: add yahtzee bonus score
 // TODO: implement scoring functions (see switch statement, line 125)
-<<<<<<< HEAD
-// TODO: make ask reroll accept lowercase letters
-// BUG: dice not holding correct values (should be fixed now)
-
-//Done: switch to using array for dice
-=======
->>>>>>> 7935c04767043f399afe9657703a5ed94e867cfa
 
 // BUG: dice not holding correct values (should be fixed now)
 //DONE: make askReroll accept lowercase letters - Justin Thomas
@@ -69,7 +62,7 @@ int main()
     int yahtzee;
     int chance;
 
-    onesScore = twosScore = threesScore = foursScore = fivesScore = sixesScore = EMPTY;
+    onesScore = twosScore = threesScore = foursScore = fivesScore = sixesScore = EMPTY;                 //sets all scores to start at 0
     threeOfAKind = fourOfAKind = fullHouse = smallStraight = largeStraight = yahtzee = chance = EMPTY;
 
     cout << "Welcome to Yahtzee!" << endl;
@@ -133,7 +126,7 @@ int main()
                                          fourOfAKind, fullHouse, smallStraight,
                                          largeStraight, yahtzee, chance);
 
-        /*switch (scoreOption)
+        switch (scoreOption)
         {
             case ONES:
                 onesScore = scoreOnes(ones, twos, threes, fours, fives, sixes);
@@ -174,7 +167,7 @@ int main()
             case CHANCE:
                 chance = scoreChance(ones, twos, threes, fours, fives, sixes);
                 break;
-        }*/
+        }
 
         printScore(onesScore, twosScore, threesScore, foursScore, fivesScore, sixesScore,
                    threeOfAKind, fourOfAKind, fullHouse, smallStraight, largeStraight, yahtzee, chance);
@@ -244,7 +237,7 @@ bool askReroll(int n)
  * printScore
  * --------------------
  * This function prints out the complete score table
- * for the yahtzee game in its current state.
+ * for the Yahtzee game in its current state.
  *
  ********************************/
 void printScore(int onesScore, int twosScore, int threesScore, int foursScore,
