@@ -16,9 +16,9 @@
 // TODO: add yahtzee bonus score
 // TODO: implement scoring functions (see switch statement, line 125)
 // TODO: make ask reroll accept lowercase letters
-// BUG: dice not holding correct values
+// BUG: dice not holding correct values (should be fixed now)
 
-//Done: switch to using array for dice
+//Done: switch to using array for dice 
 
 
 using namespace std;
@@ -92,23 +92,23 @@ int main()
 
             if (redo1)
             {
-                die1 = rand() % SIDES;
+                dice[0] = rand() % SIDES;
             }
             if (redo2)
             {
-                die2 = rand() % SIDES;
+                dice[1] = rand() % SIDES;
             }
             if (redo3)
             {
-                die3 = rand() % SIDES;
+                dice[2] = rand() % SIDES;
             }
             if (redo4)
             {
-                die4 = rand() % SIDES;
+                dice[3] = rand() % SIDES;
             }
             if (redo5)
             {
-                die5 = rand() % SIDES;
+                dice[4] = rand() % SIDES;
             }
 
             printRoll(dice[0], dice[1], dice[2], dice[3], dice[4]);
