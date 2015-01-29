@@ -206,7 +206,7 @@ bool askReroll(int n)
     char ch;
     while (true)
     {
-        cout << "Would you like to reroll die " << n << "? (Y/N) ";
+        cout << "Would you like to roll the die again? " << n << "? (Y/N) ";
         cin >> ch;
         switch (ch)
         {
@@ -215,7 +215,7 @@ bool askReroll(int n)
             case 'N':
                 return false;
             default:
-                cout << "Invalid response" << endl;
+                cout << "Your response is Invalid please try again" << endl;
         }
     }
 
