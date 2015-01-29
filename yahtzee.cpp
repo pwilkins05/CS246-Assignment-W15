@@ -385,6 +385,7 @@ int getScoreOption(int onesScore, int twosScore, int threesScore, int foursScore
                 if (chance == EMPTY) valid = true;
                 break;
         }
+		// if not valid print out the a message to the user
         if (!valid)
         {
             cout << "That category has already been used" << endl;
