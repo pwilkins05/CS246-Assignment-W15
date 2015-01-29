@@ -13,7 +13,7 @@ private:
 public:
 	Potato(string potato)
 	{
-		this.potato = potato;
+		this.potato = potato;//Needs to use an arrow, not a dot.
 	}
 	string getPotato(void)
 	{
@@ -24,11 +24,11 @@ public:
 int main(void)
 {
 	Potato* potato = new Potato("potato");
-	for (int i = 0; i < POTATO; i--)
+	for (int i = 0; i < POTATO; i--) // i-- will continually loop this forever. It needs ++ to increment until it reaches potato.
 	{
 		for (int j = i; j < POTATO; j++)
 		{
-			cout << potato.getPotato();
+			cout << potato.getPotato(); // Needs to use an arrow, not a dot. potato is a pointer to an object.
 		}
 		cout << endl;
 	}
