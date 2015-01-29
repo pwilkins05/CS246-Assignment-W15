@@ -9,7 +9,7 @@
  *
  * Starter code by Paul Wilkins
  * Last Modified: 02/04/2014
- *
+ * Modified again by CS246 W15 class
  *******************************/
 
 // TODO: switch to using arrays for scores
@@ -22,7 +22,6 @@
 
 
 using namespace std;
-
 void printRoll(int n1, int n2, int n3, int n4, int n5);
 bool askReroll(int n);
 void printSeparator();
@@ -63,7 +62,7 @@ int main()
     int yahtzee;
     int chance;
 
-    onesScore = twosScore = threesScore = foursScore = fivesScore = sixesScore = EMPTY;
+    onesScore = twosScore = threesScore = foursScore = fivesScore = sixesScore = EMPTY;                 //sets all scores to start at 0
     threeOfAKind = fourOfAKind = fullHouse = smallStraight = largeStraight = yahtzee = chance = EMPTY;
 
     cout << "Welcome to Yahtzee!" << endl;
@@ -127,7 +126,7 @@ int main()
                                          fourOfAKind, fullHouse, smallStraight,
                                          largeStraight, yahtzee, chance);
 
-        /*switch (scoreOption)
+        switch (scoreOption)
         {
             case ONES:
                 onesScore = scoreOnes(ones, twos, threes, fours, fives, sixes);
@@ -168,7 +167,7 @@ int main()
             case CHANCE:
                 chance = scoreChance(ones, twos, threes, fours, fives, sixes);
                 break;
-        }*/
+        }
 
         printScore(onesScore, twosScore, threesScore, foursScore, fivesScore, sixesScore,
                    threeOfAKind, fourOfAKind, fullHouse, smallStraight, largeStraight, yahtzee, chance);
@@ -231,7 +230,7 @@ bool askReroll(int n)
  * printScore
  * --------------------
  * This function prints out the complete score table
- * for the yahtzee game in its current state.
+ * for the Yahtzee game in its current state.
  *
  ********************************/
 void printScore(int onesScore, int twosScore, int threesScore, int foursScore,
