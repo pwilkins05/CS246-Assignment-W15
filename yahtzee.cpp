@@ -218,6 +218,10 @@ bool askReroll(int n)
             case 'N':
 			case 'n':
                 return false;
+            case 'y':
+                return true;
+            case 'n':
+                return false;
             default:
                 cout << "Invalid response" << endl;
         }
