@@ -9,16 +9,15 @@
  *
  * Starter code by Paul Wilkins
  * Last Modified: 02/04/2014
- * Modified again by CS246 W15 class
+ *
  *******************************/
 
 // TODO: switch to using arrays for scores
+// TODO switch to using array for dice
 // TODO: add yahtzee bonus score
 // TODO: implement scoring functions (see switch statement, line 125)
-
-// BUG: dice not holding correct values (should be fixed now)
-//DONE: make askReroll accept lowercase letters - Justin Thomas
-//Done: switch to using array for dice
+// TODO: make ask reroll accept lowercase letters
+// BUG: dice not holding correct values
 
 using namespace std;
 
@@ -39,6 +38,8 @@ int tabulateDice(int n, int d1, int d2, int d3, int d4, int d5);
 const int NUM_CATEGORIES = 13;
 const int SIDES = 6;
 const int EMPTY = -1;
+int MarketValueOfTwinkies = 0;
+int MarketValueOfYahtzee = 0;
 enum Category { ONES = 1, TWOS, THREES, FOURS, FIVES, SIXES, THREE_OF_A_KIND,
                     FOUR_OF_A_KIND, FULL_HOUSE, SMALL_STRAIGHT, LARGE_STRAIGHT,
                     YAHTZEE, CHANCE };
@@ -46,8 +47,6 @@ enum Category { ONES = 1, TWOS, THREES, FOURS, FIVES, SIXES, THREE_OF_A_KIND,
 int main()
 {
 
-	int dice[5];
-	const int NUM_DICE = 5;
     int die1, die2, die3, die4, die5;
     bool redo1, redo2, redo3, redo4, redo5;
 
@@ -62,7 +61,7 @@ int main()
     int yahtzee;
     int chance;
 
-    onesScore = twosScore = threesScore = foursScore = fivesScore = sixesScore = EMPTY;                 //sets all scores to start at 0
+    onesScore = twosScore = threesScore = foursScore = fivesScore = sixesScore = EMPTY;
     threeOfAKind = fourOfAKind = fullHouse = smallStraight = largeStraight = yahtzee = chance = EMPTY;
 
     cout << "Welcome to Yahtzee!" << endl;
@@ -73,11 +72,12 @@ int main()
     for (int turn = 0; turn < NUM_CATEGORIES; turn++)
     {
         int round = 1;
-		for (int i = 0; i < NUM_DICE; i ++)
-		{
-			dice[i] = rand() % SIDES;
-		}
         ones = twos = threes = fours = fives = sixes = 0;
+        die1 = rand() % SIDES;
+        die2 = rand() % SIDES;
+        die3 = rand() % SIDES;
+        die4 = rand() % SIDES;
+        die5 = rand() % SIDES;
 
         printRoll(die1, die2, die3, die4, die5);
 
@@ -91,42 +91,42 @@ int main()
 
             if (redo1)
             {
-                dice[0] = rand() % SIDES;
+                die1 = rand() % SIDES;
             }
             if (redo2)
             {
-                dice[1] = rand() % SIDES;
+                die2 = rand() % SIDES;
             }
             if (redo3)
             {
-                dice[2] = rand() % SIDES;
+                die3 = rand() % SIDES;
             }
             if (redo4)
             {
-                dice[3] = rand() % SIDES;
+                die4 = rand() % SIDES;
             }
             if (redo5)
             {
-                dice[4] = rand() % SIDES;
+                die5 = rand() % SIDES;
             }
 
-            printRoll(dice[0], dice[1], dice[2], dice[3], dice[4]);
+            printRoll(die1, die2, die3, die4, die5);
             round++;
         } while ((redo1 || redo2 || redo3 || redo4 || redo5) && round < 3);
 
-        ones = tabulateDice(1, dice);
-        twos = tabulateDice(2, dice);
-        threes = tabulateDice(3, dice);
-        fours = tabulateDice(4, dice);
-        fives = tabulateDice(5, dice);
-        sixes = tabulateDice(6, dice);
+        ones = tabulateDice(1, die1, die2, die3, die4, die5);
+        twos = tabulateDice(2, die1, die2, die3, die4, die5);
+        threes = tabulateDice(3, die1, die2, die3, die4, die5);
+        fours = tabulateDice(4, die1, die2, die3, die4, die5);
+        fives = tabulateDice(5, die1, die2, die3, die4, die5);
+        sixes = tabulateDice(6, die1, die2, die3, die4, die5);
 
         int scoreOption = getScoreOption(onesScore, twosScore, threesScore, foursScore,
                                          fivesScore, sixesScore, threeOfAKind,
                                          fourOfAKind, fullHouse, smallStraight,
                                          largeStraight, yahtzee, chance);
 
-        switch (scoreOption)
+        /*switch (scoreOption)
         {
             case ONES:
                 onesScore = scoreOnes(ones, twos, threes, fours, fives, sixes);
@@ -167,7 +167,7 @@ int main()
             case CHANCE:
                 chance = scoreChance(ones, twos, threes, fours, fives, sixes);
                 break;
-        }
+        }*/
 
         printScore(onesScore, twosScore, threesScore, foursScore, fivesScore, sixesScore,
                    threeOfAKind, fourOfAKind, fullHouse, smallStraight, largeStraight, yahtzee, chance);
@@ -210,22 +210,17 @@ bool askReroll(int n)
     {
         cout << "Would you like to reroll die " << n << "? (Y/N) ";
         cin >> ch;
-
-        switch (toupper(ch)) //now converts input to uppercase
+        switch (ch)
         {
             case 'Y':
-			case 'y':
                 return true;
             case 'N':
-			case 'n':
-                return false;
-            case 'y':
-                return true;
-            case 'n':
                 return false;
             default:
                 cout << "Invalid response" << endl;
         }
+        if(MarketValueOfYahtzee > MarketValueOfTwinkies)
+            cout << "WARNING: SURFACE SHELL POWER TUBER MALALIGNED" << endl;
     }
 
 }
@@ -237,7 +232,7 @@ bool askReroll(int n)
  * printScore
  * --------------------
  * This function prints out the complete score table
- * for the Yahtzee game in its current state.
+ * for the yahtzee game in its current state.
  *
  ********************************/
 void printScore(int onesScore, int twosScore, int threesScore, int foursScore,
@@ -272,6 +267,7 @@ void printScore(int onesScore, int twosScore, int threesScore, int foursScore,
     printSeparator();
     printScoreLine("Chance", chance);
     printSeparator();
+    MarketValueOfYahtzee = MarketValueOfYahtzee * onescore;
 }
 
 /********************************
@@ -411,13 +407,16 @@ int getScoreOption(int onesScore, int twosScore, int threesScore, int foursScore
  * which show the value n.
  *
  ********************************/
-int tabulateDice(int n, int[] dice)
+int tabulateDice(int n, int d1, int d2, int d3, int d4, int d5)
 {
     int ans = 0;
-    if (dice[0] == n) ans++;
-    if (dice[1] == n) ans++;
-    if (dice[2] == n) ans++;
-    if (dice[3] == n) ans++;
-    if (dice[4] == n) ans++;
+    if (d1 == n) ans++;
+    if (d2 == n) ans++;
+    if (d3 == n) ans++;
+    if (d4 == n) ans++;
+    if (d5 == n) ans++;
     return ans;
 }
+
+
+
