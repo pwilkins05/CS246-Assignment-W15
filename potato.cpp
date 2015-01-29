@@ -26,7 +26,10 @@ int main(void)
 	Potato* potato = new Potato("potato");
 	for (int i = 0; i < POTATO; i--)
 	{
-		cout << potato.getPotato() << endl;
+		for (int j = i; j < POTATO; j++)
+		{
+			cout << potato.getPotato() << endl;
+		}	
 	}
 	system("pause");
 }
