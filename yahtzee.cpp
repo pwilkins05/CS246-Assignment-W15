@@ -215,7 +215,7 @@ bool askReroll(int n)
     char ch;
     while (true)
     {
-        cout << "Would you like to reroll die " << n << "? (Y/N) ";
+        cout << "Would you like to roll the die again? " << n << "? (Y/N) ";
         cin >> ch;
 
         switch (toupper(ch)) //now converts input to uppercase
@@ -231,7 +231,7 @@ bool askReroll(int n)
             case 'n':
                 return false;
             default:
-                cout << "Invalid response" << endl;
+                cout << "Your response is Invalid please try again" << endl;
         }
     }
 
@@ -401,6 +401,7 @@ int getScoreOption(int onesScore, int twosScore, int threesScore, int foursScore
                 if (chance == EMPTY) valid = true;
                 break;
         }
+		// if not valid print out the a message to the user
         if (!valid)
         {
             cout << "That category has already been used" << endl;
