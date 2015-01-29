@@ -15,17 +15,19 @@
 // TODO: switch to using arrays for scores
 // TODO: add yahtzee bonus score
 // TODO: implement scoring functions (see switch statement, line 125)
-<<<<<<< HEAD
+//<<<<<<< HEAD
 // TODO: make ask reroll accept lowercase letters
 // BUG: dice not holding correct values (should be fixed now)
 
 //Done: switch to using array for dice
-=======
->>>>>>> 7935c04767043f399afe9657703a5ed94e867cfa
+//=======
+//>>>>>>> 7935c04767043f399afe9657703a5ed94e867cfa
 
 // BUG: dice not holding correct values (should be fixed now)
 //DONE: make askReroll accept lowercase letters - Justin Thomas
 //Done: switch to using array for dice
+
+//Done: Line 225~231, removed duplicate case issues and unnecessary cases after someone else converted all input to uppercase
 
 using namespace std;
 
@@ -220,12 +222,13 @@ bool askReroll(int n)
 
         switch (toupper(ch)) //now converts input to uppercase
         {
-            case 'Y':
-			case 'y':
-                return true;
-            case 'N':
-			case 'n':
-                return false;
+//            case 'Y':
+//			case 'y':
+//                return true;
+//            case 'N':
+//			case 'n':
+//                return false;
+// Removed unnecessary cases and duplicate case problems after upper case conversion above
             case 'y':
                 return true;
             case 'n':
