@@ -4,7 +4,7 @@
 #include <iostream>
 using namespace std;
 
-const int POTATO = 25;
+const int POTATO = 15;
 
 class Potato
 {
