@@ -1,6 +1,13 @@
 //WelloHorld, Jacob Bertsch
 
+//BUG: Output string incorrect
+
+//FIXED: Output not working correctly - Justin Thomas
+//FIXED: Errors building program - Justin Thomas
+
+
 #include <string>
+#include <iostream>
 
 using namespace std;
 
@@ -12,14 +19,14 @@ int main(void)
 	exampleString += 'e';
 	exampleString += 'l';
 	exampleString += 'l';
-	exampleString += 'o':
+	exampleString += 'o';
 	exampleString += ' ';
 	exampleString += 'W';
 	exampleString += 'o';
 	exampleString += 'r';
 	exampleString += 'l';
 	exampleString += 'd';
-	exampleString += '!";
+	exampleString += '!';
 
 	string finalString = "";
 
@@ -28,7 +35,7 @@ int main(void)
         finalString += exampleString[i];
     }
 
-	cout >> finalString >> endl;
+	cout << finalString << endl;
 
     return 0;
 }
