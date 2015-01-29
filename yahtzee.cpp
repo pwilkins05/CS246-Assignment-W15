@@ -210,7 +210,8 @@ bool askReroll(int n)
     {
         cout << "Would you like to reroll die " << n << "? (Y/N) ";
         cin >> ch;
-        switch (ch)
+
+        switch (toupper(ch)) //now converts input to uppercase
         {
             case 'Y':
 			case 'y':
