@@ -18,11 +18,11 @@ int main()
     {
         cin >> guess;
 
-        if (guess < randomNum)
+        if (guess <= randomNum)
         {
             cout << "You are too low";
         }
-        else if (guess > randomNum)
+        else if (guess >= randomNum)
         {
             cout << "You are too high";
         }
