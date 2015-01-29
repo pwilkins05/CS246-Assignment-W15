@@ -420,3 +420,9 @@ int tabulateDice(int n, int[] dice)
     if (dice[4] == n) ans++;
     return ans;
 }
+
+// returns the value of the dice with ones - James Rogers
+int scoreOnes(ones, twos, threes, fours, fives, sixes)
+{
+    return ones;
+}
