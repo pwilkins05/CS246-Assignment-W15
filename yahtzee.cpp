@@ -10,19 +10,14 @@
  * Starter code by Paul Wilkins
  * Last Modified: 02/04/2014
  *
- * Justin Thomas: Completed task to edit askReroll to accept lowercase letters
- * Modified 1/29/15
- *
- *
  *******************************/
 
 // TODO: switch to using arrays for scores
 // TODO switch to using array for dice
 // TODO: add yahtzee bonus score
 // TODO: implement scoring functions (see switch statement, line 125)
+// TODO: make ask reroll accept lowercase letters
 // BUG: dice not holding correct values
-
-// DONE: make ask reroll accept lowercase letters
 
 using namespace std;
 
@@ -216,10 +211,8 @@ bool askReroll(int n)
         switch (ch)
         {
             case 'Y':
-			case 'y':
-				return true;
+                return true;
             case 'N':
-			case 'n':
                 return false;
             default:
                 cout << "Invalid response" << endl;
