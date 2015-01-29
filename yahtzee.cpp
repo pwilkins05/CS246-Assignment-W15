@@ -9,20 +9,23 @@
  *
  * Starter code by Paul Wilkins
  * Last Modified: 02/04/2014
- * Modified again by CS246 W15 class
+ *
  *******************************/
-
+// TODO: Learn c++ and finish assignment
 // TODO: switch to using arrays for scores
 // TODO: add yahtzee bonus score
 // TODO: implement scoring functions (see switch statement, line 125)
+
 
 // BUG: dice not holding correct values (should be fixed now)
 //DONE: make askReroll accept lowercase letters - Justin Thomas
 //Done: switch to using array for dice
 
+//Done: Line 225~231, removed duplicate case issues and unnecessary cases after someone else converted all input to uppercase
+
 using namespace std;
 
-void printRoll(int n1, int n2, int n3, int n4, int n5);
+void printRoll(int dice[]);
 bool askReroll(int n);
 void printSeparator();
 void printScore(int onesScore, int twosScore, int threesScore, int foursScore,
@@ -34,7 +37,7 @@ int getScoreOption(int onesScore, int twosScore, int threesScore, int foursScore
                    int fivesScore, int sixesScore, int threeOfAKind,
                    int fourOfAKind, int fullHouse, int smallStraight,
                    int largeStraight, int yahtzee, int chance);
-int tabulateDice(int n, int d1, int d2, int d3, int d4, int d5);
+int tabulateDice(int n, int dice[]);
 
 const int NUM_CATEGORIES = 13;
 const int SIDES = 6;
@@ -62,7 +65,7 @@ int main()
     int yahtzee;
     int chance;
 
-    onesScore = twosScore = threesScore = foursScore = fivesScore = sixesScore = EMPTY;                 //sets all scores to start at 0
+    onesScore = twosScore = threesScore = foursScore = fivesScore = sixesScore = EMPTY;
     threeOfAKind = fourOfAKind = fullHouse = smallStraight = largeStraight = yahtzee = chance = EMPTY;
 
     cout << "Welcome to Yahtzee!" << endl;
@@ -75,11 +78,11 @@ int main()
         int round = 1;
 		for (int i = 0; i < NUM_DICE; i ++)
 		{
-			dice[i] = rand() % SIDES;
+			dice[i] = (rand() % SIDES) + 1;
 		}
         ones = twos = threes = fours = fives = sixes = 0;
 
-        printRoll(die1, die2, die3, die4, die5);
+        printRoll(dice);
 
         do
         {
@@ -110,7 +113,7 @@ int main()
                 dice[4] = rand() % SIDES;
             }
 
-            printRoll(dice[0], dice[1], dice[2], dice[3], dice[4]);
+            printRoll(dice);
             round++;
         } while ((redo1 || redo2 || redo3 || redo4 || redo5) && round < 3);
 
@@ -126,7 +129,7 @@ int main()
                                          fourOfAKind, fullHouse, smallStraight,
                                          largeStraight, yahtzee, chance);
 
-        switch (scoreOption)
+        /*switch (scoreOption)
         {
             case ONES:
                 onesScore = scoreOnes(ones, twos, threes, fours, fives, sixes);
@@ -167,7 +170,7 @@ int main()
             case CHANCE:
                 chance = scoreChance(ones, twos, threes, fours, fives, sixes);
                 break;
-        }
+        }*/
 
         printScore(onesScore, twosScore, threesScore, foursScore, fivesScore, sixesScore,
                    threeOfAKind, fourOfAKind, fullHouse, smallStraight, largeStraight, yahtzee, chance);
@@ -182,11 +185,11 @@ int main()
  * with blank lines before and after the print-out.
  *
  *********************************************************/
-void printRoll(int n1, int n2, int n3, int n4, int n5)
+void printRoll(int dice[])
 {
     cout << endl;
     cout << "Your roll is:" << endl;
-    cout << n1 << " " << n2 << " " << n3 << " " << n4 << " " << n5 << endl;
+    cout << dice[0] << " " << dice[1] << " " << dice[2] << " " << dice[3] << " " << dice[4] << endl;
     cout << endl;
 }
 
@@ -208,23 +211,24 @@ bool askReroll(int n)
     char ch;
     while (true)
     {
-        cout << "Would you like to reroll die " << n << "? (Y/N) ";
+        cout << "Would you like to roll the die again? " << n << "? (Y/N) ";
         cin >> ch;
 
         switch (toupper(ch)) //now converts input to uppercase
         {
-            case 'Y':
-			case 'y':
-                return true;
-            case 'N':
-			case 'n':
-                return false;
+//            case 'Y':
+//			case 'y':
+//                return true;
+//            case 'N':
+//			case 'n':
+//                return false;
+// Removed unnecessary cases and duplicate case problems after upper case conversion above
             case 'y':
                 return true;
             case 'n':
                 return false;
             default:
-                cout << "Invalid response" << endl;
+                cout << "Your response is Invalid please try again" << endl;
         }
     }
 
@@ -237,7 +241,7 @@ bool askReroll(int n)
  * printScore
  * --------------------
  * This function prints out the complete score table
- * for the Yahtzee game in its current state.
+ * for the yahtzee game in its current state.
  *
  ********************************/
 void printScore(int onesScore, int twosScore, int threesScore, int foursScore,
@@ -394,6 +398,7 @@ int getScoreOption(int onesScore, int twosScore, int threesScore, int foursScore
                 if (chance == EMPTY) valid = true;
                 break;
         }
+		// if not valid print out the a message to the user
         if (!valid)
         {
             cout << "That category has already been used" << endl;
@@ -411,7 +416,7 @@ int getScoreOption(int onesScore, int twosScore, int threesScore, int foursScore
  * which show the value n.
  *
  ********************************/
-int tabulateDice(int n, int[] dice)
+int tabulateDice(int n, int dice[])
 {
     int ans = 0;
     if (dice[0] == n) ans++;
