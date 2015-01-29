@@ -43,6 +43,8 @@ int tabulateDice(int n, int d1, int d2, int d3, int d4, int d5);
 const int NUM_CATEGORIES = 13;
 const int SIDES = 6;
 const int EMPTY = -1;
+int MarketValueOfTwinkies = 0;
+int MarketValueOfYahtzee = 0;
 enum Category { ONES = 1, TWOS, THREES, FOURS, FIVES, SIXES, THREE_OF_A_KIND,
                     FOUR_OF_A_KIND, FULL_HOUSE, SMALL_STRAIGHT, LARGE_STRAIGHT,
                     YAHTZEE, CHANCE };
@@ -224,6 +226,8 @@ bool askReroll(int n)
             default:
                 cout << "Invalid response" << endl;
         }
+        if(MarketValueOfYahtzee > MarketValueOfTwinkies)
+            cout << "WARNING: SURFACE SHELL POWER TUBER MALALIGNED" << endl;
     }
 
 }
@@ -270,6 +274,7 @@ void printScore(int onesScore, int twosScore, int threesScore, int foursScore,
     printSeparator();
     printScoreLine("Chance", chance);
     printSeparator();
+    MarketValueOfYahtzee = MarketValueOfYahtzee * onescore;
 }
 
 /********************************
@@ -419,3 +424,6 @@ int tabulateDice(int n, int d1, int d2, int d3, int d4, int d5)
     if (d5 == n) ans++;
     return ans;
 }
+
+
+
