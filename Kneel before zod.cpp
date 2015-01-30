@@ -212,9 +212,9 @@ bool askReroll(int n)
         cin >> ch;
         switch (ch)
         {
-            case 'Y':
+            case 'Y' || 'y':
                 return true;
-            case 'N':
+            case 'N' || 'n':
                 return false;
             default:
                 cout << "Invalid response" << endl;
