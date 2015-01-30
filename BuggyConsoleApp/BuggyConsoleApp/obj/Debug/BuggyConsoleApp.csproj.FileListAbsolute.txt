@@ -10,3 +10,7 @@ C:\Users\Dennis\Dropbox\246\Wk4\BuggyConsoleApp\BuggyConsoleApp\obj\Debug\BuggyC
 C:\Users\Dennis\Dropbox\246\Wk4\BuggyConsoleApp\BuggyConsoleApp\bin\Debug\BuggyConsoleApp.exe
 C:\Users\Dennis\Dropbox\246\Wk4\BuggyConsoleApp\BuggyConsoleApp\bin\Debug\BuggyConsoleApp.pdb
 C:\Users\Dennis\Dropbox\246\Wk4\BuggyConsoleApp\BuggyConsoleApp\obj\Debug\BuggyConsoleApp.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\https---github.com-pwilkins05-CS246-Assignment-W15\CS246-Assignment-W15\BuggyConsoleApp\BuggyConsoleApp\bin\Debug\BuggyConsoleApp.exe.config
+C:\Users\Admin\Documents\GitHub\https---github.com-pwilkins05-CS246-Assignment-W15\CS246-Assignment-W15\BuggyConsoleApp\BuggyConsoleApp\obj\Debug\BuggyConsoleApp.exe
+C:\Users\Admin\Documents\GitHub\https---github.com-pwilkins05-CS246-Assignment-W15\CS246-Assignment-W15\BuggyConsoleApp\BuggyConsoleApp\obj\Debug\BuggyConsoleApp.pdb
+C:\Users\Admin\Documents\GitHub\https---github.com-pwilkins05-CS246-Assignment-W15\CS246-Assignment-W15\BuggyConsoleApp\BuggyConsoleApp\obj\Debug\BuggyConsoleApp.csprojResolveAssemblyReference.cache
