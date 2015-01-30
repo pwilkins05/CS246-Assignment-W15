@@ -1,9 +1,12 @@
+// Number Guess Game
+// created by James Rogers
+// 01/30/2015
+
 #include <iostream>
 #include <cmath>
 #include <cstdlib>
 #include <ctime>
 
-// made changes
 using namespace std;
 
 int main()
