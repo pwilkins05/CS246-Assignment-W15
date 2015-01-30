@@ -1,0 +1,12 @@
+C:\Users\Dennis\Dropbox\296N\Lab4\BuggyConsoleApp\BuggyConsoleApp\bin\Debug\BuggyConsoleApp.exe.config
+C:\Users\Dennis\Dropbox\296N\Lab4\BuggyConsoleApp\BuggyConsoleApp\bin\Debug\BuggyConsoleApp.exe
+C:\Users\Dennis\Dropbox\296N\Lab4\BuggyConsoleApp\BuggyConsoleApp\bin\Debug\BuggyConsoleApp.pdb
+C:\Users\Dennis\Dropbox\296N\Lab4\BuggyConsoleApp\BuggyConsoleApp\obj\Debug\BuggyConsoleApp.csprojResolveAssemblyReference.cache
+C:\Users\Dennis\Dropbox\296N\Lab4\BuggyConsoleApp\BuggyConsoleApp\obj\Debug\BuggyConsoleApp.exe
+C:\Users\Dennis\Dropbox\296N\Lab4\BuggyConsoleApp\BuggyConsoleApp\obj\Debug\BuggyConsoleApp.pdb
+C:\Users\Dennis\Dropbox\246\Wk4\BuggyConsoleApp\BuggyConsoleApp\bin\Debug\BuggyConsoleApp.exe.config
+C:\Users\Dennis\Dropbox\246\Wk4\BuggyConsoleApp\BuggyConsoleApp\obj\Debug\BuggyConsoleApp.exe
+C:\Users\Dennis\Dropbox\246\Wk4\BuggyConsoleApp\BuggyConsoleApp\obj\Debug\BuggyConsoleApp.pdb
+C:\Users\Dennis\Dropbox\246\Wk4\BuggyConsoleApp\BuggyConsoleApp\bin\Debug\BuggyConsoleApp.exe
+C:\Users\Dennis\Dropbox\246\Wk4\BuggyConsoleApp\BuggyConsoleApp\bin\Debug\BuggyConsoleApp.pdb
+C:\Users\Dennis\Dropbox\246\Wk4\BuggyConsoleApp\BuggyConsoleApp\obj\Debug\BuggyConsoleApp.csprojResolveAssemblyReference.cache
