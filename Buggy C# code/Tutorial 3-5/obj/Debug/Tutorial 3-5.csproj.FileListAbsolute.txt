@@ -1,0 +1,11 @@
+C:\Users\Admin\Dropbox\CS 133N\Lab 3B\Tutorial 3-5\Tutorial 3-5\bin\Debug\Tutorial 3-5.exe.config
+C:\Users\Admin\Dropbox\CS 133N\Lab 3B\Tutorial 3-5\Tutorial 3-5\bin\Debug\Tutorial 3-5.exe
+C:\Users\Admin\Dropbox\CS 133N\Lab 3B\Tutorial 3-5\Tutorial 3-5\bin\Debug\Tutorial 3-5.pdb
+C:\Users\Admin\Dropbox\CS 133N\Lab 3B\Tutorial 3-5\Tutorial 3-5\obj\Debug\Tutorial_3_5.changeCounter.resources
+C:\Users\Admin\Dropbox\CS 133N\Lab 3B\Tutorial 3-5\Tutorial 3-5\obj\Debug\Tutorial_3_5.Properties.Resources.resources
+C:\Users\Admin\Dropbox\CS 133N\Lab 3B\Tutorial 3-5\Tutorial 3-5\obj\Debug\Tutorial 3-5.csproj.GenerateResource.Cache
+C:\Users\Admin\Dropbox\CS 133N\Lab 3B\Tutorial 3-5\Tutorial 3-5\obj\Debug\Tutorial 3-5.exe
+C:\Users\Admin\Dropbox\CS 133N\Lab 3B\Tutorial 3-5\Tutorial 3-5\obj\Debug\Tutorial 3-5.pdb
+C:\Users\Admin\Documents\GitHub\https---github.com-pwilkins05-CS246-Assignment-W15\CS246-Assignment-W15\Buggy C# code\Tutorial 3-5\bin\Debug\Tutorial 3-5.exe.config
+C:\Users\Admin\Documents\GitHub\https---github.com-pwilkins05-CS246-Assignment-W15\CS246-Assignment-W15\Buggy C# code\Tutorial 3-5\obj\Debug\Tutorial 3-5.exe
+C:\Users\Admin\Documents\GitHub\https---github.com-pwilkins05-CS246-Assignment-W15\CS246-Assignment-W15\Buggy C# code\Tutorial 3-5\obj\Debug\Tutorial 3-5.pdb
