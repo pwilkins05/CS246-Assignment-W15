@@ -38,6 +38,7 @@ int getScoreOption(int onesScore, int twosScore, int threesScore, int foursScore
                    int fourOfAKind, int fullHouse, int smallStraight,
                    int largeStraight, int yahtzee, int chance);
 int tabulateDice(int n, int dice[]);
+int scoreOnes(ones, twos, threes, fours, fives, sixes); // James Rogers
 
 const int NUM_CATEGORIES = 13;
 const int SIDES = 6;
@@ -425,4 +426,17 @@ int tabulateDice(int n, int dice[])
     if (dice[3] == n) ans++;
     if (dice[4] == n) ans++;
     return ans;
+}
+
+/********************************
+ *
+ * scoreOnes
+ * --------------------
+ * This function returns the number of ones as the score.
+ * Author: James Rogers
+ *
+ ********************************/
+int scoreOnes(ones, twos, threes, fours, fives, sixes)
+{
+    return ones;
 }
