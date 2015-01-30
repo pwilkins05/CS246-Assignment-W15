@@ -1,0 +1,6 @@
+C:\Users\Emily\Desktop\Numbers\Numbers\bin\Debug\Numbers.exe.config
+C:\Users\Emily\Desktop\Numbers\Numbers\bin\Debug\Numbers.exe
+C:\Users\Emily\Desktop\Numbers\Numbers\bin\Debug\Numbers.pdb
+C:\Users\Emily\Desktop\Numbers\Numbers\obj\Debug\Numbers.csprojResolveAssemblyReference.cache
+C:\Users\Emily\Desktop\Numbers\Numbers\obj\Debug\Numbers.exe
+C:\Users\Emily\Desktop\Numbers\Numbers\obj\Debug\Numbers.pdb
