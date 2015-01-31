@@ -21,12 +21,12 @@ namespace Tutorial_3_5
 
         private void exitButton_Click(object sender, EventArgs e)
         {
-            thiz.Close(); // spelling error on this line
+            this.Close(); // FIXED
         }
 
         private void fiveCentPictureBox_Click(object sender, EventArgs e)
         {
-            total += .5; // numerical error
+            total += .05; // numerical error FIXED
             totalDisplayLabel.Text = total.ToString("c");
         }
 
@@ -45,7 +45,7 @@ namespace Tutorial_3_5
         private void fiftyCentsPictureBox_Click(object sender, EventArgs e)
         {
             total += .50;
-            totalDisplayLabel.Text = total.ToString("f"); // incorrect format
+            totalDisplayLabel.Text = total.ToString("c"); // incorrect format FIXED
         }
     }
 }

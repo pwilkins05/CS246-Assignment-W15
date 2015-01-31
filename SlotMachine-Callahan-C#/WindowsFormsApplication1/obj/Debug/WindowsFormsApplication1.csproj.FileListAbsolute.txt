@@ -10,3 +10,12 @@ J:\College Stuff\System Design\Week 4\WindowsFormsApplication1\WindowsFormsAppli
 J:\College Stuff\System Design\Week 4\SlotMachine-RobCallahan-C#\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
 J:\College Stuff\System Design\Week 4\SlotMachine-RobCallahan-C#\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 J:\College Stuff\System Design\Week 4\SlotMachine-RobCallahan-C#\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\logan\Documents\GitHub\CS246-Assignment-W15\SlotMachine-Callahan-C#\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\logan\Documents\GitHub\CS246-Assignment-W15\SlotMachine-Callahan-C#\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\logan\Documents\GitHub\CS246-Assignment-W15\SlotMachine-Callahan-C#\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\logan\Documents\GitHub\CS246-Assignment-W15\SlotMachine-Callahan-C#\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\logan\Documents\GitHub\CS246-Assignment-W15\SlotMachine-Callahan-C#\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\logan\Documents\GitHub\CS246-Assignment-W15\SlotMachine-Callahan-C#\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\logan\Documents\GitHub\CS246-Assignment-W15\SlotMachine-Callahan-C#\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\logan\Documents\GitHub\CS246-Assignment-W15\SlotMachine-Callahan-C#\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\logan\Documents\GitHub\CS246-Assignment-W15\SlotMachine-Callahan-C#\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
