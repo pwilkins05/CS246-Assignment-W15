@@ -20,9 +20,8 @@
 // BUG: dice not holding correct values (should be fixed now)
 //DONE: make askReroll accept lowercase letters - Justin Thomas
 //Done: switch to using array for dice
-
 //Done: Line 225~231, removed duplicate case issues and unnecessary cases after someone else converted all input to uppercase
-
+//Done: lines 450-453:Added scoreTwos function to score the two, also lines 215-234 fixed askReroll function - Levi Bishop, Jan.31, 2015
 using namespace std;
 
 void printRoll(int dice[]);
@@ -38,7 +37,11 @@ int getScoreOption(int onesScore, int twosScore, int threesScore, int foursScore
                    int fourOfAKind, int fullHouse, int smallStraight,
                    int largeStraight, int yahtzee, int chance);
 int tabulateDice(int n, int dice[]);
-int scoreOnes(ones, twos, threes, fours, fives, sixes); // James Rogers
+/*int scoreOnes(ones, twos, threes, fours, fives, sixes); // James Rogers*/
+int scoreOnes(int ones, int twos, int threes, int fours, int fives,
+              int sixes);
+int scoreTwos(int ones, int twos, int threes, int fours, int fives,
+              int sixes);/**Levi Bishop*/
 
 const int NUM_CATEGORIES = 13;
 const int SIDES = 6;
@@ -130,7 +133,7 @@ int main()
                                          fourOfAKind, fullHouse, smallStraight,
                                          largeStraight, yahtzee, chance);
 
-        /*switch (scoreOption)
+        switch (scoreOption)
         {
             case ONES:
                 onesScore = scoreOnes(ones, twos, threes, fours, fives, sixes);
@@ -138,7 +141,7 @@ int main()
             case TWOS:
                 twosScore = scoreTwos(ones, twos, threes, fours, fives, sixes);
                 break;
-            case THREES:
+            /*case THREES:
                 threesScore = scoreThrees(ones, twos, threes, fours, fives, sixes);
                 break;
             case FOURS:
@@ -170,8 +173,8 @@ int main()
                 break;
             case CHANCE:
                 chance = scoreChance(ones, twos, threes, fours, fives, sixes);
-                break;
-        }*/
+                break;*/
+        }
 
         printScore(onesScore, twosScore, threesScore, foursScore, fivesScore, sixesScore,
                    threeOfAKind, fourOfAKind, fullHouse, smallStraight, largeStraight, yahtzee, chance);
@@ -208,31 +211,24 @@ void printRoll(int dice[])
  *
  *********************************************************/
 bool askReroll(int n)
-{
+{/*rewrote code and simplified to make it work correctly accepts upper and lowercase-Levi Bishop*/
     char ch;
     while (true)
     {
-        cout << "Would you like to roll the die again? " << n << "? (Y/N) ";
+        cout << "Would you like to reroll die " << n << "? (Y/N) ";
         cin >> ch;
-
-        switch (toupper(ch)) //now converts input to uppercase
+        switch (ch)
         {
-//            case 'Y':
-//			case 'y':
-//                return true;
-//            case 'N':
-//			case 'n':
-//                return false;
-// Removed unnecessary cases and duplicate case problems after upper case conversion above
-            case 'y':
-                return true;
-            case 'n':
-                return false;
-            default:
-                cout << "Your response is Invalid please try again" << endl;
+        case 'Y':
+        case 'y':
+            return true;
+        case 'N':
+        case 'n':
+            return false;
+        default:
+            cout << "Invalid response please try again" << endl;
         }
     }
-
 }
 
 
@@ -436,7 +432,20 @@ int tabulateDice(int n, int dice[])
  * Author: James Rogers
  *
  ********************************/
-int scoreOnes(ones, twos, threes, fours, fives, sixes)
+int scoreOnes(int ones,int twos,int threes,int fours,int fives,int sixes)
 {
     return ones;
+}
+
+/********************************
+ * scoreTwos
+ * --------------------
+ * This function returns the number
+ * of twos * 2 as the score.
+ * Author: Levi Bishop
+ * Date:Jan. 31, 2015
+ ********************************/
+int scoreTwos(int ones, int twos, int threes, int fours, int fives, int sixes)
+{
+    return twos * 2;
 }
