@@ -1,0 +1,9 @@
+E:\ASP.Net\Term 3\Week3\RandomNumberGenerator\RandomNumberGenerator\bin\Debug\RandomNumberGenerator.exe.config
+E:\ASP.Net\Term 3\Week3\RandomNumberGenerator\RandomNumberGenerator\bin\Debug\RandomNumberGenerator.exe
+E:\ASP.Net\Term 3\Week3\RandomNumberGenerator\RandomNumberGenerator\bin\Debug\RandomNumberGenerator.pdb
+E:\ASP.Net\Term 3\Week3\RandomNumberGenerator\RandomNumberGenerator\obj\Debug\RandomNumberGenerator.csprojResolveAssemblyReference.cache
+E:\ASP.Net\Term 3\Week3\RandomNumberGenerator\RandomNumberGenerator\obj\Debug\RandomNumberGenerator.RNG.resources
+E:\ASP.Net\Term 3\Week3\RandomNumberGenerator\RandomNumberGenerator\obj\Debug\RandomNumberGenerator.Properties.Resources.resources
+E:\ASP.Net\Term 3\Week3\RandomNumberGenerator\RandomNumberGenerator\obj\Debug\RandomNumberGenerator.csproj.GenerateResource.Cache
+E:\ASP.Net\Term 3\Week3\RandomNumberGenerator\RandomNumberGenerator\obj\Debug\RandomNumberGenerator.exe
+E:\ASP.Net\Term 3\Week3\RandomNumberGenerator\RandomNumberGenerator\obj\Debug\RandomNumberGenerator.pdb
