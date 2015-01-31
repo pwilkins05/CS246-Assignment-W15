@@ -8,7 +8,7 @@
  * Yahtzee
  *
  * Starter code by Paul Wilkins
- * Last Modified: 02/04/2014
+ * Last Modified: 01/30/2015
  *
  *******************************/
 // TODO: Learn c++ and finish assignment
