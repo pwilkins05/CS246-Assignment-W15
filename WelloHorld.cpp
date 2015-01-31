@@ -1,4 +1,6 @@
-//WelloHorld, Jacob Bertsch
+//Hello World, Jacob Bertsch
+
+//Swapped an H and W above, serious troubleshooting.
 
 //BUG: Output string incorrect
 
