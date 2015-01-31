@@ -26,7 +26,7 @@ namespace FibonacciSequenceJWood
             int startNum = 1;  // Starting number
             int endNum = int.Parse(endNumBox.Text);  // Set end number to the input in textbox
 
-            if (endNum <= 20 || endNum >= 2)  // BUG on this line.  End number must be between 2 AND 20 or don't run the logic
+            if (endNum <= 20 && endNum >= 2)  // BUG on this line.  End number must be between 2 AND 20 or don't run the logic: FIXED By Rob Callahan- Replaced the || with && 
             {
                 fibListBox.Items.Clear();  // Refresh listbox on new button click              
 
@@ -48,7 +48,7 @@ namespace FibonacciSequenceJWood
                 for (int index = 2; index < endNum; index++)  
                 {
                     fibonaccciArray[index] = fibonaccciArray[index - 1] + fibonaccciArray[index - 2];   
-                    fibListBox.Items.Add(fibonaccciArray[indexoops]);  // Bug Here
+                    fibListBox.Items.Add(fibonaccciArray[index]);  // Bug Here - Fixed By Rob Callahan: index was typed indexoops
                 }
             }
             else
