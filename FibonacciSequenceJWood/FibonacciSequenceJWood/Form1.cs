@@ -17,16 +17,17 @@ namespace FibonacciSequenceJWood
             InitializeComponent();
         }
 
-        /* TODO BUGS:  There is a bug in the logic of the if statement that is supposed to only allow
-         * the endNum to be between 2 *AND* 20.  It is allowing for numbers outside the desired range.
-         * there is also a typo down below, possibly a mistyped variable. */
+        /*Bug Fixes: 
+         *          if statement for input check (numbers ranged 2-20).
+                    Fixed typo in foreach loop.
+         */         
 
         private void fibButton_Click(object sender, EventArgs e)
         {
             int startNum = 1;  // Starting number
             int endNum = int.Parse(endNumBox.Text);  // Set end number to the input in textbox
 
-            if (endNum <= 20 || endNum >= 2)  // BUG on this line.  End number must be between 2 AND 20 or don't run the logic
+            if (endNum <= 20 && endNum >= 2)
             {
                 fibListBox.Items.Clear();  // Refresh listbox on new button click              
 
@@ -48,7 +49,7 @@ namespace FibonacciSequenceJWood
                 for (int index = 2; index < endNum; index++)  
                 {
                     fibonaccciArray[index] = fibonaccciArray[index - 1] + fibonaccciArray[index - 2];   
-                    fibListBox.Items.Add(fibonaccciArray[indexoops]);  // Bug Here
+                    fibListBox.Items.Add(fibonaccciArray[index]); 
                 }
             }
             else

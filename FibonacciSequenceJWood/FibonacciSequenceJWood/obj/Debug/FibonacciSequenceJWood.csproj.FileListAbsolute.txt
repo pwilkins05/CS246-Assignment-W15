@@ -7,3 +7,12 @@ c:\users\jesse\documents\visual studio 2012\Projects\FibonacciSequenceJWood\Fibo
 c:\users\jesse\documents\visual studio 2012\Projects\FibonacciSequenceJWood\FibonacciSequenceJWood\obj\Debug\FibonacciSequenceJWood.csproj.GenerateResource.Cache
 c:\users\jesse\documents\visual studio 2012\Projects\FibonacciSequenceJWood\FibonacciSequenceJWood\obj\Debug\FibonacciSequenceJWood.exe
 c:\users\jesse\documents\visual studio 2012\Projects\FibonacciSequenceJWood\FibonacciSequenceJWood\obj\Debug\FibonacciSequenceJWood.pdb
+D:\LCC_Classes\SystemDesign\Week04\cs246-assignment-w15\FibonacciSequenceJWood\FibonacciSequenceJWood\bin\Debug\FibonacciSequenceJWood.exe.config
+D:\LCC_Classes\SystemDesign\Week04\cs246-assignment-w15\FibonacciSequenceJWood\FibonacciSequenceJWood\obj\Debug\FibonacciSequenceJWood.exe
+D:\LCC_Classes\SystemDesign\Week04\cs246-assignment-w15\FibonacciSequenceJWood\FibonacciSequenceJWood\obj\Debug\FibonacciSequenceJWood.pdb
+D:\LCC_Classes\SystemDesign\Week04\cs246-assignment-w15\FibonacciSequenceJWood\FibonacciSequenceJWood\obj\Debug\FibonacciSequenceJWood.csprojResolveAssemblyReference.cache
+D:\LCC_Classes\SystemDesign\Week04\cs246-assignment-w15\FibonacciSequenceJWood\FibonacciSequenceJWood\obj\Debug\FibonacciSequenceJWood.Form1.resources
+D:\LCC_Classes\SystemDesign\Week04\cs246-assignment-w15\FibonacciSequenceJWood\FibonacciSequenceJWood\obj\Debug\FibonacciSequenceJWood.Properties.Resources.resources
+D:\LCC_Classes\SystemDesign\Week04\cs246-assignment-w15\FibonacciSequenceJWood\FibonacciSequenceJWood\obj\Debug\FibonacciSequenceJWood.csproj.GenerateResource.Cache
+D:\LCC_Classes\SystemDesign\Week04\cs246-assignment-w15\FibonacciSequenceJWood\FibonacciSequenceJWood\bin\Debug\FibonacciSequenceJWood.exe
+D:\LCC_Classes\SystemDesign\Week04\cs246-assignment-w15\FibonacciSequenceJWood\FibonacciSequenceJWood\bin\Debug\FibonacciSequenceJWood.pdb
