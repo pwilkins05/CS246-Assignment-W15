@@ -51,10 +51,10 @@ namespace WeatherSimulator
                 st = Console.ReadLine();
                 int.TryParse(st, out userNum);
             }
-            while (userNum != 1);                                                                            //<--PROBLEM: This should be while (usernum == 0)
+            while (userNum != 0);                                                                            //<--PROBLEM: This should be while (usernum == 0)
 
             Console.WriteLine("Goodbye");
-            //Console.ReadKey();                                                                  <-- PROBLEM: This line shouldn't be commented out
+            Console.ReadKey();                                                                //  <-- PROBLEM: This line shouldn't be commented out
         }
 
         private int randomNum(int min, int max)
@@ -66,7 +66,7 @@ namespace WeatherSimulator
         {
             string message = "In " + city[c] + ", it is ";
 
-            message += weather[rand.Next(0, weather.Length-1)];                                     //PROBLEM: the second param for Next() should just be 'weather.Length'
+            message += weather[rand.Next(0, weather.Length)];                                     //PROBLEM: the second param for Next() should just be 'weather.Length'
 
             return message;
         }

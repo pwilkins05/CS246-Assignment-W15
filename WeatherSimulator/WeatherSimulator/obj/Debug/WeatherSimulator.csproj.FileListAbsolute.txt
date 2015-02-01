@@ -4,3 +4,9 @@ D:\LCC_Classes\ASP.NET-MVC\WeatherSimulator\WeatherSimulator\bin\Debug\WeatherSi
 D:\LCC_Classes\ASP.NET-MVC\WeatherSimulator\WeatherSimulator\obj\Debug\WeatherSimulator.csprojResolveAssemblyReference.cache
 D:\LCC_Classes\ASP.NET-MVC\WeatherSimulator\WeatherSimulator\obj\Debug\WeatherSimulator.exe
 D:\LCC_Classes\ASP.NET-MVC\WeatherSimulator\WeatherSimulator\obj\Debug\WeatherSimulator.pdb
+C:\Users\Emily\Documents\GitHub\CS246-Assignment-W15\WeatherSimulator\WeatherSimulator\bin\Debug\WeatherSimulator.exe.config
+C:\Users\Emily\Documents\GitHub\CS246-Assignment-W15\WeatherSimulator\WeatherSimulator\obj\Debug\WeatherSimulator.exe
+C:\Users\Emily\Documents\GitHub\CS246-Assignment-W15\WeatherSimulator\WeatherSimulator\obj\Debug\WeatherSimulator.pdb
+C:\Users\Emily\Documents\GitHub\CS246-Assignment-W15\WeatherSimulator\WeatherSimulator\bin\Debug\WeatherSimulator.exe
+C:\Users\Emily\Documents\GitHub\CS246-Assignment-W15\WeatherSimulator\WeatherSimulator\bin\Debug\WeatherSimulator.pdb
+C:\Users\Emily\Documents\GitHub\CS246-Assignment-W15\WeatherSimulator\WeatherSimulator\obj\Debug\WeatherSimulator.csprojResolveAssemblyReference.cache
