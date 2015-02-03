@@ -10,3 +10,9 @@ C:\Users\Emily\Documents\GitHub\CS246-Assignment-W15\WeatherSimulator\WeatherSim
 C:\Users\Emily\Documents\GitHub\CS246-Assignment-W15\WeatherSimulator\WeatherSimulator\bin\Debug\WeatherSimulator.exe
 C:\Users\Emily\Documents\GitHub\CS246-Assignment-W15\WeatherSimulator\WeatherSimulator\bin\Debug\WeatherSimulator.pdb
 C:\Users\Emily\Documents\GitHub\CS246-Assignment-W15\WeatherSimulator\WeatherSimulator\obj\Debug\WeatherSimulator.csprojResolveAssemblyReference.cache
+C:\Users\jpoet_000\Documents\GitHub\CS246-Assignment-W15\WeatherSimulator\WeatherSimulator\bin\Debug\WeatherSimulator.exe.config
+C:\Users\jpoet_000\Documents\GitHub\CS246-Assignment-W15\WeatherSimulator\WeatherSimulator\obj\Debug\WeatherSimulator.exe
+C:\Users\jpoet_000\Documents\GitHub\CS246-Assignment-W15\WeatherSimulator\WeatherSimulator\obj\Debug\WeatherSimulator.pdb
+C:\Users\jpoet_000\Documents\GitHub\CS246-Assignment-W15\WeatherSimulator\WeatherSimulator\bin\Debug\WeatherSimulator.exe
+C:\Users\jpoet_000\Documents\GitHub\CS246-Assignment-W15\WeatherSimulator\WeatherSimulator\bin\Debug\WeatherSimulator.pdb
+C:\Users\jpoet_000\Documents\GitHub\CS246-Assignment-W15\WeatherSimulator\WeatherSimulator\obj\Debug\WeatherSimulator.csprojResolveAssemblyReference.cache

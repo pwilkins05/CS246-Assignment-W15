@@ -4,3 +4,9 @@ C:\Users\Emily\Desktop\Numbers\Numbers\bin\Debug\Numbers.pdb
 C:\Users\Emily\Desktop\Numbers\Numbers\obj\Debug\Numbers.csprojResolveAssemblyReference.cache
 C:\Users\Emily\Desktop\Numbers\Numbers\obj\Debug\Numbers.exe
 C:\Users\Emily\Desktop\Numbers\Numbers\obj\Debug\Numbers.pdb
+C:\Users\jpoet_000\Documents\GitHub\CS246-Assignment-W15\Numbers\Numbers\bin\Debug\Numbers.exe.config
+C:\Users\jpoet_000\Documents\GitHub\CS246-Assignment-W15\Numbers\Numbers\obj\Debug\Numbers.exe
+C:\Users\jpoet_000\Documents\GitHub\CS246-Assignment-W15\Numbers\Numbers\obj\Debug\Numbers.pdb
+C:\Users\jpoet_000\Documents\GitHub\CS246-Assignment-W15\Numbers\Numbers\bin\Debug\Numbers.exe
+C:\Users\jpoet_000\Documents\GitHub\CS246-Assignment-W15\Numbers\Numbers\bin\Debug\Numbers.pdb
+C:\Users\jpoet_000\Documents\GitHub\CS246-Assignment-W15\Numbers\Numbers\obj\Debug\Numbers.csprojResolveAssemblyReference.cache
