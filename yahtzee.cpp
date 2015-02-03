@@ -141,10 +141,10 @@ int main()
             case TWOS:
                 twosScore = scoreTwos(ones, twos, threes, fours, fives, sixes);
                 break;
-            /*case THREES:
+            case THREES:
                 threesScore = scoreThrees(ones, twos, threes, fours, fives, sixes);
                 break;
-            case FOURS:
+            /*case FOURS:
                 foursScore = scoreFours(ones, twos, threes, fours, fives, sixes);
                 break;
             case FIVES:
@@ -448,4 +448,15 @@ int scoreOnes(int ones,int twos,int threes,int fours,int fives,int sixes)
 int scoreTwos(int ones, int twos, int threes, int fours, int fives, int sixes)
 {
     return twos * 2;
+}
+
+/********************************
+ * scoreThrees
+ * --------------------
+ * This function returns the number
+ * of threes * 3 as the score.
+ ********************************/
+int scoreThrees(int ones, int twos, int threes, int fours, int fives, int sixes)
+{
+    return threes * 3;
 }
