@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 Ryan Nowak. All rights reserved.
 //
 
+//Corrected multiply and divide functions from using % and * respectively -jpbertsch
+
 #include <iostream>
 
 int add(int one, int two);
@@ -15,9 +17,9 @@ int multiply(int one, int two);
 
 int main(int argc, const char * argv[]) {
     int what = 4, is = 2, a = 1, dog = 3;
-    
+
     int total = add(what, add(is, add(a, dog)));
-    
+
     std::cout << "there are " << total << " letters in WHAT IS A DOG.\n";
     std::cout << "loose your dog and you have " << subtract(total, dog) << "\n\n";
 }
@@ -33,10 +35,10 @@ int subtract(int one, int two){
 
 
 int multiply(int one, int two){
-    return one % two;
+    return one * two;
 }
 
 
 int divide(int one, int two){
-    return one * two;
+    return one / two;
 }
