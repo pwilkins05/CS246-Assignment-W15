@@ -15,14 +15,13 @@ namespace exercise2
         public Form1()
         {
             InitializeComponent();
-            numLabel.Text = "Hello";
+            numLabel.Text = "Click a button";
             
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            //typo in the string
-            numLabel.Text = "Goodbye";
+            numLabel.Text = "One";
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -32,27 +31,23 @@ namespace exercise2
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            //wrong string here
-            numLabel.Text = "Two";
+            numLabel.Text = "Three";
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            // wrong string here
-            numLabel.Text = "One";
+            numLabel.Text = "Four";
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            //mistake
-            numLabell.Text = "Five";
+            numLabel.Text = "Five";
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //should be 1500 not 15000
             numLabel.Text = "Goodbye";
-            System.Threading.Thread.Sleep(15000);
+            System.Threading.Thread.Sleep(1500);
 
             this.Close();
         }
