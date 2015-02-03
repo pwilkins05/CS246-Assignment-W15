@@ -460,3 +460,16 @@ int scoreThrees(int ones, int twos, int threes, int fours, int fives, int sixes)
 {
     return threes * 3;
 }
+
+/********************************
+ * scoreTwos
+ * --------------------
+ * This function returns the number
+ * of Fours * 4 as the score.
+ * Author: Jordan Poet
+ * Date:FEB 2, 2015
+ ********************************/
+int scoreFours(int ones, int twos, int threes, int fours, int fives, int sixes)
+{
+    return fours * 4;
+}
