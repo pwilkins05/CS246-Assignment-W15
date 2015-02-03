@@ -32,7 +32,7 @@ int main(void)
 
 	string finalString = "";
 
-	for (int i=1;i<=exampleString.length();i++)
+	for (int i=0;i<=exampleString.length();i++)
     {
         finalString += exampleString[i];
     }
