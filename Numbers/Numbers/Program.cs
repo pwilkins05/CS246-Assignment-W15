@@ -45,7 +45,7 @@ namespace Numbers
       }
       Console.WriteLine();
 
-      for (int i = 0; i <= 4; i++) //<--The bug is in this line of code :-)!
+      for (int i = 0; i <= 5; i++) //<--The bug has been fixed!
       {
         Console.Write(c);
       }
